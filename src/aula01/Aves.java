@@ -87,8 +87,9 @@ public class Aves extends Animais {
 		switch(opcao){
 			case 1: this.cadastro();				
 					aves.add(this);
+					System.out.println("Tamahno: " + aves.size());
 					break;
-			case 2: this.visualizarDados();
+			case 2: this.visualizarDados(aves);
 					break;					
 			default: System.out.println("Opcao invalida");
 					break;

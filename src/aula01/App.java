@@ -5,20 +5,29 @@ import java.util.ArrayList;
 
 public class App {
 
-	
-	
-	
+		
 	
 	private static void menu(){
 		
+		Aves ave = new Aves();
+		
+		
+		//Repteis reptel = new Repteis();
+		//Mamiferos  mamifero = new Mamiferos();
 		
 		ArrayList<Aves> aves = new ArrayList<Aves>();
-		ArrayList<Mamiferos> mamiferos = new ArrayList<Mamiferos>();
-		ArrayList<Repteis> repteis = new ArrayList<Repteis>();
+		
+		
+       //ArrayList<Mamiferos> mamiferos = new ArrayList<Mamiferos>();
+       //ArrayList<Repteis> repteis = new ArrayList<Repteis>();
+		
 		Scanner console = new Scanner(System.in);
 		
 		int opcao;
 		
+		
+		for(;;) {
+			
 		System.out.println("================= Sistema Veterinario =================");
 		
 		System.out.println("1 - Aves");
@@ -30,26 +39,26 @@ public class App {
 		opcao = console.nextInt();
 		
 		switch(opcao){
-			case 1: Aves ave = new Aves();
-					ave.menu(aves);
+			case 1: ave.menu(aves);						
 					break;
-			case 2: Repteis reptel = new Repteis();
-					reptel.menu();
+			case 2: 
+//					reptel.menu(repteis);
 					break;
-			case 3: Mamiferos  mamifero = new Mamiferos();
-					mamifero.menu();
+			case 3: 
+//					mamifero.menu(mamiferos);
 					break;
 			default: System.out.println("Opcao invalida");
 		}		
 		
+		}
 	}
 	
 	
 	public static void main(String[] args) {
 		
-		for(;;) {
+		
 			menu();
-		}
+		
 				
 	}
 
