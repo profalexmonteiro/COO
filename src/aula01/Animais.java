@@ -64,13 +64,7 @@ public class Animais {
 	public void visualizarDados() {
 		System.out.println("Dados de Animal");
 		//Método imprime a string "Nome: " concatenada com o atributo nome da Classe animal
-		System.out.println("Nome: " + getNome());
 		
-		System.out.println("Idade: " + getIdade());
-				
-		System.out.println("Peso: " + getPeso());
-				
-		System.out.println("Cor dos olhos: " + getCorOlhos());
 				
 	}
 		
